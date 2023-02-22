@@ -70,19 +70,19 @@ async def start_(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "Məni qrupa əlavə et 🥳",
-                        url=f"https://t.me/MarixuanaMusicBot?startgroup=true",
+                        url=f"https://t.me/DTOSongBot?startgroup=true",
                     )
                 ],
                 [
                     InlineKeyboardButton("📚 Əmrlər", callback_data="cbcmds"),
-                    InlineKeyboardButton("😍 Sahibəm", url=f"https://t.me/OWLSKurucusu"),
+                    InlineKeyboardButton("😍 𝐎𝐰𝐧𝐞𝐫", url=f"https://t.me/Thagiyevv"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Söhbət Qrupum", url=f"https://t.me/GECECITAYFATR"
+                        "💬 Team Qrupum", url=f"https://t.me/DTOteamm"
                     ),
                     InlineKeyboardButton(
-                        "🥰 Kanalım", url=f"https://t.me/BuyurunBenimGORiL"
+                        "📢 Kanalım", url=f"https://t.me/RiyaddBlogg"
                     ),
                 ],
             ]
@@ -103,15 +103,15 @@ async def alive(c: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📣 Dəstək", url=f"https://t.me/GECECITAYFATR"),
+                InlineKeyboardButton("📣 Dəstək", url=f"https://t.me/RiyaddBlogg"),
                 InlineKeyboardButton(
-                    "🗯️ Məlumat", url=f"https://t.me/BuyurunBenimGORiL"
+                    "🗯️ Məlumat", url=f"https://t.me/Thagiyevv"
                 ),
             ]
         ]
     )
 
-    alive = f"• Salam {message.from_user.mention()} {BOT_NAME}\n\n🧑🏼‍💻 Sahibəm: {ALIVE_NAME}\n👾 Bot versiyası: v{version}\n🔥 Pragram versiyası: {pyrover}\n🐍 Python versiyası: {python_version}\n✨ PyTgCalls versiyası: {pytover.version}\n🆙 İşləmək durumu: {uptime}\n\n❤ Məni qrupa əlavə etdiyiniz üçün təşəkkürlər 😍"
+    alive = f"• Salam {message.from_user.mention()} {BOT_NAME}\n\n🧑‍💻 𝐎𝐰𝐧𝐞𝐫: {ALIVE_NAME}\n👾 Bot versiyası: v{version}\n🔥 Pragram versiyası: {pyrover}\n🐍 Python versiyası: {python_version}\n✨ PyTgCalls versiyası: {pytover.version}\n🆙 İşləmək durumu: {uptime}\n\n❤ Məni qrupa əlavə etdiyiniz üçün təşəkkürlər 😍"
 
     await c.send_photo(
         chat_id,
@@ -169,11 +169,11 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Məlumat", url=f"https://t.me/BuyurunBenimGORiLr"),
-                            InlineKeyboardButton("🗯️ Dəstək", url=f"https://t.me/GECECITAYFATR")
+                            InlineKeyboardButton("📣 Məlumat", url=f"https://t.me/Thagiyevv"),
+                            InlineKeyboardButton("🗯️ Dəstək", url=f"https://t.me/RiyaddBlogg")
                         ],
                         [
-                            InlineKeyboardButton("🎙 Asistan", url=f"https://t.me/MarixuanaMusicAsistan")
+                            InlineKeyboardButton("🎙 Asistan", url=f"https://t.me/DTOSongAsistan")
                         ]
                     ]
                 )
